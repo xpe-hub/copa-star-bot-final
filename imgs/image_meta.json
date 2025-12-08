@@ -1,0 +1,92 @@
+[
+  {
+    "query": "Logo animado de estrella dorada para bot de Discord, estilo profesional con efectos brillantes",
+    "image_info": {
+      "url": "https://i.redd.it/clicking-on-gifs-shows-a-huge-star-instead-of-playing-v0-rzb2tl8h609e1.jpg?width=759&format=pjpg&auto=webp&s=1287a886aee170321c6c55cb6d2c644c1cf6fa06",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 40962,
+      "width": 759,
+      "height": 780,
+      "total_pixels": 592020,
+      "basic_score": 0.8717784671521709,
+      "file_name": "star_bot_logo_4.jpg"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "Logo animado de estrella dorada para bot de Discord, estilo profesional con efectos brillantes",
+    "image_info": {
+      "url": "https://cdn.dribbble.com/userupload/23539459/file/original-2e31da5ec07404e1d16c3f560ea66de6.gif",
+      "img_format": "GIF",
+      "mode": "P",
+      "file_size": 280418,
+      "width": 800,
+      "height": 600,
+      "total_pixels": 480000,
+      "basic_score": 0.8308402869740421,
+      "file_name": "star_bot_logo_2.gif"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "Logo animado de estrella dorada para bot de Discord, estilo profesional con efectos brillantes",
+    "image_info": {
+      "url": "https://raw.githubusercontent.com/Zingzy/discord-bot-animator/main/assets/example.gif",
+      "img_format": "GIF",
+      "mode": "P",
+      "file_size": 1124693,
+      "width": 433,
+      "height": 593,
+      "total_pixels": 256769,
+      "basic_score": 0.772379309930067,
+      "file_name": "star_bot_logo_3.gif"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "Logo animado de Copa de estrellas (STAR CUP) con efectos dorados y azules, estilo gaming",
+    "image_info": {
+      "url": "https://i.pinimg.com/originals/69/e0/6a/69e06a096ec5e14eefa1b7ff72fddf7f.gif",
+      "img_format": "GIF",
+      "mode": "P",
+      "file_size": 336578,
+      "width": 800,
+      "height": 600,
+      "total_pixels": 480000,
+      "basic_score": 0.8358997428215702,
+      "file_name": "star_cup_logo_8.gif"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "Logo animado de Copa de estrellas (STAR CUP) con efectos dorados y azules, estilo gaming",
+    "image_info": {
+      "url": "http://dev.starcup.jbtest.co/wp-content/uploads/2021/05/starcuplogo-1.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 115805,
+      "width": 1192,
+      "height": 452,
+      "total_pixels": 538784,
+      "basic_score": 0.8044630765972903,
+      "file_name": "star_cup_logo_7.png"
+    },
+    "llm_score": null
+  },
+  {
+    "query": "Logo animado de Copa de estrellas (STAR CUP) con efectos dorados y azules, estilo gaming",
+    "image_info": {
+      "url": "https://static.vecteezy.com/system/resources/thumbnails/014/522/668/small/video-game-star-cup-icon-flat-style-vector.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 9035,
+      "width": 350,
+      "height": 350,
+      "total_pixels": 122500,
+      "basic_score": 0.7122202619632688,
+      "file_name": "star_cup_logo_5.jpg"
+    },
+    "llm_score": null
+  }
+]
