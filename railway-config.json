@@ -1,0 +1,1 @@
+{"name": "copa-star-bot-v3", "description": "Copa Star Discord Bot - Sistema de colas automático", "build": {"builder": "NIXPACKS"}, "deploy": {"restartPolicyType": "ON_FAILURE", "restartPolicyMaxRetries": 3}, "environments": {"production": {"variables": {"DISCORD_TOKEN": "your_discord_token_here", "NODE_ENV": "production", "PORT": "3000"}}}}
