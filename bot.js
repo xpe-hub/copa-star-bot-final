@@ -16,8 +16,14 @@ const COLORS = {
     primary: 0x1E90FF,  // Azul como debe ser
     success: 0x4CAF50,
     warning: 0xFF9800,
-    error: 0xF44336,   // Rojo para mensajes de error
+    error: 0xED4245,   // Rojo exacto para mensajes de error
     info: 0x2196F3
+};
+
+// Emojis personalizados do servidor
+const CUSTOM_EMOJIS = {
+    microphone: '🎤', // Emoji do microfone (será colorido via CSS se for personalizado)
+    volume: '🔊' // Emoji padrão do altavoz
 };
 
 // Lista de canais de voz permitidos (IDs reais do seu servidor)
@@ -264,13 +270,8 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply({
                 embeds: [{
                     color: COLORS.error,
-                    title: '🔊 ERRO',
-                    description: '**Você não está em nenhum canal de voz.**\n\nPara entrar na fila, você deve estar em um dos seguintes canais:',
-                    fields: [{
-                        name: '🎤 Canales de voz permitidos',
-                        value: allowedChannels.join('\n') || 'No hay canales configurados',
-                        inline: false
-                    }],
+                    title: `${CUSTOM_EMOJIS.microphone} ERRO`,
+                    description: '**Você não está em nenhum canal de voz permitido!**\n\n📢 **Canais permitidos:**\n' + allowedChannels.join('\n') + '\n\n🎮 **Entre em um canal de voz e tente novamente.**',
                     timestamp: new Date()
                 }],
                 ephemeral: true
@@ -493,7 +494,12 @@ client.on(Events.MessageCreate, async message => {
         if (!isInVoiceChannel) {
             const allowedChannelsList = VOICE_CHANNELS.map(id => `<#${id}>`).join('\n');
             await message.reply({
-                content: `❌ **Você não está em nenhum canal de voz permitido!**\n\n📢 **Canais permitidos:**\n${allowedChannelsList}\n\n🎮 **Entre em um canal de voz e tente novamente.**`,
+                embeds: [{
+                    color: COLORS.error,
+                    title: `${CUSTOM_EMOJIS.microphone} ERRO`,
+                    description: `❌ **Você não está em nenhum canal de voz permitido!**\n\n📢 **Canais permitidos:**\n${allowedChannelsList}\n\n🎮 **Entre em um canal de voz e tente novamente.**`,
+                    timestamp: new Date()
+                }],
                 ephemeral: true
             });
             return;
