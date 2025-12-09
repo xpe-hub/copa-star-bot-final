@@ -1,0 +1,11 @@
+[providers]
+node = "20"
+
+[phases.install]
+cmds = ["npm install"]
+
+[phases.build]
+cmds = ["echo 'Build completed'"]
+
+[phases.start]
+cmd = "node bot.js"
