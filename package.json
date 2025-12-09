@@ -4,7 +4,7 @@
   "description": "Bot de Discord para sistema de colas de Copa Star - Competencias de fútbol",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js",
+    "start": "NODE_ENV=production node bot.js",
     "dev": "nodemon bot.js"
   },
   "keywords": [
@@ -20,9 +20,6 @@
   "dependencies": {
     "discord.js": "^14.25.1",
     "dotenv": "^16.3.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.2"
   },
   "engines": {
     "node": ">=18.0.0",
