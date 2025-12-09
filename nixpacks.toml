@@ -8,4 +8,4 @@ cmds = ["npm ci --only=production"]
 cmds = ["echo 'Build completed'"]
 
 [phases.start]
-cmd = "node bot.js"
+cmd = "NODE_ENV=production node bot.js"
