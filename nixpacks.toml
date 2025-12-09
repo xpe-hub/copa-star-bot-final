@@ -2,7 +2,7 @@
 node = "20"
 
 [phases.install]
-cmds = ["npm install"]
+cmds = ["npm ci --only=production"]
 
 [phases.build]
 cmds = ["echo 'Build completed'"]
