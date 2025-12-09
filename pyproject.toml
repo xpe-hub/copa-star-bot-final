@@ -53,6 +53,7 @@ dependencies = [
  "mypy>=1.16.1",
  # PDF处理
  "weasyprint>=65.1",
+ "discord-py>=2.6.4",
 ]
 
 [build-system]
