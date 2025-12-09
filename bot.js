@@ -270,8 +270,7 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply({
                 embeds: [{
                     color: COLORS.error,
-                    title: `${CUSTOM_EMOJIS.microphone} ERRO`,
-                    description: '**Você não está em nenhum canal de voz permitido!**\n\n📢 **Canais permitidos:**\n' + allowedChannels.join('\n') + '\n\n🎮 **Entre em um canal de voz e tente novamente.**',
+                    description: `❌ **Você não está em nenhum canal de voz permitido!**\n\n📢 **Canais permitidos:**\n${allowedChannels.join('\n')}\n\n🎮 **Entre em um canal de voz e tente novamente.**`,
                     timestamp: new Date()
                 }],
                 ephemeral: true
@@ -496,7 +495,6 @@ client.on(Events.MessageCreate, async message => {
             await message.reply({
                 embeds: [{
                     color: COLORS.error,
-                    title: `${CUSTOM_EMOJIS.microphone} ERRO`,
                     description: `❌ **Você não está em nenhum canal de voz permitido!**\n\n📢 **Canais permitidos:**\n${allowedChannelsList}\n\n🎮 **Entre em um canal de voz e tente novamente.**`,
                     timestamp: new Date()
                 }],
